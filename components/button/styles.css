@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   gap: calc(var(--half-spacing) / 2);
-  padding: calc(var(--half-spacing) / 2) var(--spacing);
+  padding: var(--half-spacing) var(--spacing);
   border-radius: var(--circular-border-radius);
   font: var(--main-label);
   white-space: nowrap;
@@ -54,7 +54,6 @@
     position: fixed;
     bottom: var(--spacing);
     right: var(--spacing);
-    padding: var(--half-spacing) var(--spacing);
     z-index: 5;
   }
 
