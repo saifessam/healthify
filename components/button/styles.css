@@ -54,6 +54,7 @@
     position: fixed;
     bottom: var(--spacing);
     right: var(--spacing);
+    padding: var(--half-spacing) var(--spacing);
     z-index: 5;
   }
 
