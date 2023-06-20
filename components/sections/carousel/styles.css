@@ -4,17 +4,19 @@ section#carousel {
   justify-content: flex-start;
   gap: var(--spacing);
   padding: var(--spacing);
+  overflow: hidden;
 
   & .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: var(--spacing);
 
     & h4 {
       font: var(--main-title);
     }
 
-    & button {
+    & a {
       padding: 0;
     }
   }
@@ -45,7 +47,7 @@ section#carousel {
       gap: var(--half-spacing);
 
       & > * {
-        width: 50dvw;
+        width: 70dvw;
         flex-grow: 1;
       }
     }

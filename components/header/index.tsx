@@ -18,7 +18,7 @@ export default function Header() {
 	return (
 		<header>
 			<Link href={"/"}>
-				<Image src={"/assets/svgs/logo.svg"} alt='Healthify' fill />
+				<Image src={"/assets/svgs/logo.svg"} alt='Healthify' fill priority />
 			</Link>
 			<Button condition="secondary" icon={isMenuVisible ? <X weight='bold' /> : <List weight='bold' />} action={toggleMenu} />
 			<Menu isVisible={isMenuVisible} />

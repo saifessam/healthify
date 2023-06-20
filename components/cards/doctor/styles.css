@@ -67,7 +67,7 @@
     z-index: 2;
 
     & h6 {
-      max-width: 15ch;
+      max-width: 20ch;
       font: var(--sub-title);
       color: var(--background-primary);
       white-space: nowrap;
@@ -88,7 +88,6 @@
     z-index: 2;
 
     & li {
-      max-width: 25ch;
       display: flex;
       justify-content: flex-start;
       align-items: center;

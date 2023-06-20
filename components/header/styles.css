@@ -7,7 +7,6 @@ header {
   align-items: center;
   padding: var(--half-spacing) var(--spacing);
   background-color: var(--background-secondary);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   z-index: 10;
 
   & > a {

@@ -22,39 +22,39 @@ export default function DoctorProfile({ doctor }: Props) {
 					<h4>Dr. {doctor.name}</h4>
 					<small>{doctor.specialization}</small>
 				</div>
-				<Button condition='primary' label='Book now' />
+				{doctor.reviews && <small>{getAverageRating(doctor.reviews.map((review) => review.rate))} <Star weight="fill" /></small>}
 			</div>
-			<ul className="body">
-				<li>
-					<div>
-						<MapPin weight='fill' />
-						<h6>Location</h6>
-					</div>
-					<small>{doctor.location.city}, {doctor.location.state}, {doctor.location.country}</small>
-				</li>
-				<li>
-					<div>
-						<Coins weight='fill' />
-						<h6>Price Range</h6>
-					</div>
-					<small>{getCurrencyFormat(doctor.priceRange.from)} ~ {getCurrencyFormat(doctor.priceRange.to)}</small>
-				</li>
-				{doctor.bio &&
+			<div className="body">
+				<ul>
 					<li>
 						<div>
-							<TextAlignLeft weight='fill' />
-							<h6>Bio</h6>
+							<MapPin weight='fill' />
+							<h6>Location</h6>
 						</div>
-						<small>{doctor.bio}</small>
+						<small>{doctor.location.city}, {doctor.location.state}, {doctor.location.country}</small>
 					</li>
-				}
-			</ul>
+					<li>
+						<div>
+							<Coins weight='fill' />
+							<h6>Price Range</h6>
+						</div>
+						<small>{getCurrencyFormat(doctor.priceRange.from)} ~ {getCurrencyFormat(doctor.priceRange.to)}</small>
+					</li>
+					{doctor.bio &&
+						<li>
+							<div>
+								<TextAlignLeft weight='fill' />
+								<h6>Bio</h6>
+							</div>
+							<small>{doctor.bio}</small>
+						</li>
+					}
+				</ul>
+				<Button condition='primary' label='Book now' />
+			</div>
 			{doctor.reviews &&
 				<div className="footer">
-					<div className="header">
-						Reviews
-						{doctor.reviews && <small>{getAverageRating(doctor.reviews.map((review) => review.rate))} <Star weight="fill" /></small>}
-					</div>
+					<div className="header">Reviews</div>
 					<ul className="body">{doctor.reviews.map((review) => <Review data={review} key={`DoctorReview(${review.id})`} />)}</ul>
 				</div>
 			}

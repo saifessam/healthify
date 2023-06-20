@@ -1,6 +1,6 @@
 "use client";
 
-import Form from "@/components/from";
+import Form from "@/components/form";
 import PasswordInput from "@/components/inputs/password";
 import TextInput from "@/components/inputs/text";
 import { SyntheticEvent, useState } from "react";

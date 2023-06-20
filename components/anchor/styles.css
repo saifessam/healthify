@@ -3,7 +3,7 @@ a {
   color: var(--accent-primary);
 
   & span {
-    font: var(--sub-label);
+    font: var(--sub-label) !important;
     color: var(--text-secondary);
   }
 }

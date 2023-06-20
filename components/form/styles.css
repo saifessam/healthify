@@ -37,7 +37,9 @@ form {
 
     & .links {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: calc(var(--half-spacing) / 2);
 
       &.centered {
         justify-content: center;

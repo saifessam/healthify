@@ -14,17 +14,17 @@
   --main-logo: 700 clamp(1.5rem, 2rem, 3rem) 'RedHatDisplay', sans-serif;
   --sub-logo: 700 clamp(1rem, 1.25rem, 2rem) 'RedHatDisplay', sans-serif;
   /* Headings Font Styles */
-  --main-heading: 700 clamp(1.5rem, 2rem, 3rem) 'GeneralSans', sans-serif;
-  --sub-heading: 700 clamp(1rem, 1.25rem, 2rem) 'GeneralSans', sans-serif;
+  --main-heading: 700 clamp(1rem, 1.75rem, 2rem) 'GeneralSans', sans-serif;
+  --sub-heading: 700 clamp(0.75rem, 1rem, 1.5rem) 'GeneralSans', sans-serif;
   /* Titles Font Styles */
   --main-title: 600 clamp(1rem, 1.25rem, 1.5rem) 'GeneralSans', sans-serif;
   --sub-title: 600 clamp(0.8rem, 1rem, 1.25rem) 'GeneralSans', sans-serif;
   /* Labels Font Styles */
-  --main-label: 500 clamp(0.8rem, 1rem, 1.25rem) 'GeneralSans', sans-serif;
-  --sub-label: 500 clamp(0.6rem, 0.8rem, 1rem) 'GeneralSans', sans-serif;
+  --main-label: 500 clamp(0.75rem, 1rem, 1.25rem) 'GeneralSans', sans-serif;
+  --sub-label: 500 clamp(0.5rem, 0.75rem, 1rem) 'GeneralSans', sans-serif;
   /* Texts Font Styles */
-  --main-text: 400 clamp(0.8rem, 1rem, 1.25rem) 'GeneralSans', sans-serif;
-  --sub-text: 400 clamp(0.7rem, 0.8rem, 1rem) 'GeneralSans', sans-serif;
+  --main-text: 400 clamp(0.75rem, 1rem, 1.25rem) 'GeneralSans', sans-serif;
+  --sub-text: 400 clamp(0.5rem, 0.75rem, 1rem) 'GeneralSans', sans-serif;
 
   /* Spacing Units */
   --spacing: 1.5rem;

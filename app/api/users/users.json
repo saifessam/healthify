@@ -39,7 +39,31 @@
 			"to": 3000
 		},
 		"verified": true,
-		"bio": "Dr. Sara Ali is a compassionate and caring pediatrician with a keen interest in child development and behavior. She is committed to providing the highest quality care to her young patients and their families, and is known for her warm and friendly demeanor."
+		"bio": "Dr. Sara Ali is a compassionate and caring pediatrician with a keen interest in child development and behavior. She is committed to providing the highest quality care to her young patients and their families, and is known for her warm and friendly demeanor.",
+		"reviews": [
+			{
+				"id": "1",
+				"user": {
+					"id": "11",
+					"name": "Kareem Hussein",
+					"image": "11.jpg"
+				},
+				"text": "Testing reviews",
+				"rate": 3.4,
+				"createdAt": "April, 02 2023"
+			},
+			{
+				"id": "2",
+				"user": {
+					"id": "12",
+					"name": "Nadia Ali",
+					"image": "12.jpg"
+				},
+				"text": "Testing reviews",
+				"rate": 2.5,
+				"createdAt": "May, 12 2023"
+			}
+		]
 	},
 	{
 		"id": "3",

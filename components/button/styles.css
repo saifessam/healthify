@@ -3,9 +3,10 @@
   justify-content: center;
   align-items: center;
   gap: calc(var(--half-spacing) / 2);
-  padding: var(--half-spacing) var(--spacing);
+  padding: calc(var(--half-spacing) / 2) var(--spacing);
   border-radius: var(--circular-border-radius);
-  font: var(--sub-label);
+  font: var(--main-label);
+  white-space: nowrap;
   cursor: pointer;
 
   & svg {

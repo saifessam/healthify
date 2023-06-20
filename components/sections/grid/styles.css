@@ -1,7 +1,7 @@
 section#grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, calc(50% - var(--half-spacing)));
+  grid-template-columns: repeat(auto-fit, calc(100% - var(--half-spacing)));
   gap: var(--half-spacing);
   padding: var(--spacing);
 }
