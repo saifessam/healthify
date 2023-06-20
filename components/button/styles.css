@@ -40,6 +40,7 @@
   }
 
   &.bordered {
+    outline: 2px solid;
     background-color: transparent !important;
   }
 
@@ -59,7 +60,7 @@
     }
 
     &.bordered {
-      border: 2px solid var(--accent-primary);
+      outline-color: var(--accent-primary);
       color: var(--accent-primary);
 
       & svg path {
@@ -77,7 +78,7 @@
     }
 
     &.bordered {
-      border: 2px solid var(--background-secondary);
+      outline-color: var(--background-secondary);
       color: var(--background-secondary);
 
       & svg path {
@@ -87,7 +88,7 @@
   }
 
   &:disabled {
-    border-color: transparent !important;
+    outline-color: transparent !important;
     background-color: var(--text-secondary);
     color: var(--background-secondary);
     cursor: default;
