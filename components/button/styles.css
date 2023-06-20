@@ -8,18 +8,35 @@
   cursor: pointer;
 
   & svg {
-    width: var(--spacing) !important;
-    height: var(--spacing) !important;
+    width: var(--spacing);
+    height: var(--spacing);
+  }
+
+  &.small {
+    font: var(--sub-label);
+
+    & svg {
+      width: 1rem;
+      height: 1rem;
+    }
   }
 
   &.normal {
     padding: var(--half-spacing) var(--spacing);
     border-radius: var(--border-radius);
+
+    &.small {
+      padding: calc(var(--half-spacing) / 2) var(--half-spacing);
+    }
   }
 
   &.circular {
     padding: var(--half-spacing);
     border-radius: var(--circular-border-radius);
+
+    &.small {
+      padding: calc(var(--half-spacing) / 2);
+    }
   }
 
   &.bordered {
@@ -74,5 +91,13 @@
     background-color: var(--text-secondary);
     color: var(--background-secondary);
     cursor: default;
+  }
+}
+
+@media (width > 768px) {
+  .button {
+    &.floating {
+      bottom: var(--spacing);
+    }
   }
 }

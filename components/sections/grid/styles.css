@@ -1,7 +1,25 @@
 section#grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, calc(100%));
-  gap: var(--spacing);
+  grid-template-columns: repeat(auto-fit, 100%);
+  gap: var(--half-spacing);
   padding: var(--spacing);
+}
+
+@media (width > 350px) {
+  section#grid {
+    grid-template-columns: repeat(auto-fit, calc(50% - var(--half-spacing)));
+  }
+}
+
+@media (width > 768px) {
+  section#grid {
+    grid-template-columns: repeat(auto-fit, calc(33.33% - var(--half-spacing)));
+  }
+}
+
+@media (width > 1024px) {
+  section#grid {
+    grid-template-columns: repeat(auto-fit, calc(25% - var(--half-spacing)));
+  }
 }

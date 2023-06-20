@@ -33,9 +33,11 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        <Main>{children}</Main>
-        <Footer />
+        <Main>
+          <Header />
+          {children}
+          <Footer />
+        </Main>
         <Navigator />
       </body>
     </html>

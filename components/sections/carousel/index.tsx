@@ -34,7 +34,7 @@ export default function CarouselSection({ title, children }: Props) {
 		<section id='carousel'>
 			<div className="header">
 				<h4>{title}</h4>
-				<Button style={{ theme: 'secondary', shape: 'normal', bordered: false }} content={<>View more <ArrowRight /></>} href='/doctors' />
+				<Button style={{ theme: 'secondary', shape: 'normal', bordered: false, small: true }} content={<>View more <ArrowRight /></>} href='/doctors' />
 			</div>
 			<div className='carousel'>
 				<Button style={{ theme: 'primary', shape: 'circular', bordered: false, disabled: offset === 0 }} className="arrow left" content={<CaretLeft weight='bold' />} action={prev} />

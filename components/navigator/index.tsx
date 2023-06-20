@@ -17,7 +17,7 @@ export default function Navigator() {
 	return (
 		<nav>
 			{buttons.map((button, index) => (
-				<Button style={{ theme: "secondary", shape: "circular", bordered: pathname !== button.href }} content={button.content} href={button.href} key={`NavigatorButton(${index})`} />
+				<Button style={{ theme: pathname === button.href ? "primary" : "secondary", shape: "circular", bordered: false }} content={button.content} href={button.href} key={`NavigatorButton(${index})`} />
 			))}
 		</nav>
 	);

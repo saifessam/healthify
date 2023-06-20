@@ -5,3 +5,11 @@ main {
   justify-content: flex-start;
   align-items: stretch;
 }
+
+@media (width > 768px) {
+  main {
+    height: 100dvh;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}

@@ -9,6 +9,7 @@ type Props = {
 		shape: "normal" | "circular";
 		bordered: boolean;
 		disabled?: boolean;
+		small?: boolean;
 	};
 	content: ReactNode;
 	className?: string;
@@ -20,6 +21,7 @@ export default function Button({ type = "button", style, content, className, hre
 	function getClassNames(): string[] {
 		const classNames: string[] = ["button", style.theme, style.shape];
 		if (style.bordered) classNames.push("bordered");
+		if (style.small) classNames.push("small");
 		if (className) classNames.push(className);
 		return classNames;
 	}

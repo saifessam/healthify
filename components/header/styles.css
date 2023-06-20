@@ -38,12 +38,39 @@ header {
     }
 
     & ul {
+      max-height: 50dvh;
       display: flex;
       flex-direction: column;
       gap: var(--half-spacing);
       padding: var(--half-spacing);
       background-color: var(--background-primary);
       border-radius: var(--half-border-radius);
+      overflow-y: auto;
+    }
+  }
+}
+
+@media (width > 768px) {
+  header {
+    & aside {
+      gap: var(--spacing);
+
+      & ul {
+        max-height: 30dvh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--half-spacing);
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+
+        & > * {
+          flex-basis: calc(50% - (var(--half-spacing) / 2));
+          padding: var(--half-spacing);
+          background-color: var(--background-primary);
+          border-radius: var(--half-border-radius);
+        }
+      }
     }
   }
 }

@@ -1,4 +1,6 @@
 .doctor-card {
+  container-type: inline-size;
+  container-name: doctor-card;
   position: relative;
   height: auto;
   aspect-ratio: 3/4;
@@ -46,7 +48,7 @@
     padding: calc(var(--half-spacing) / 2);
     border-radius: var(--border-radius);
     background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(25px);
     font: var(--sub-label);
     z-index: 2;
 
@@ -67,7 +69,7 @@
     z-index: 2;
 
     & h6 {
-      max-width: 20ch;
+      max-width: 15ch;
       font: var(--sub-title);
       color: var(--background-primary);
       white-space: nowrap;
@@ -100,6 +102,32 @@
 
       & svg path {
         fill: var(--text-secondary);
+      }
+    }
+  }
+}
+
+@container doctor-card (width < 12rem) {
+  & #name-verification {
+    & h6 {
+      font: var(--sub-label) !important;
+    }
+  }
+
+  & .entries {
+    & li {
+      & svg {
+        display: none;
+      }
+    }
+  }
+}
+
+@container doctor-card (width < 8.5rem) {
+  & .entries {
+    & li {
+      &:not(:first-child) {
+        display: none;
       }
     }
   }

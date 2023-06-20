@@ -8,6 +8,7 @@ section#call-to-action {
   padding-top: var(--spacing);
 
   & h3 {
+    max-width: 70ch;
     font: var(--sub-title);
     text-align: center;
   }

@@ -7,6 +7,16 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   padding: var(--half-spacing);
-  background-color: var(--accent-primary);
+  background-color: var(--background-secondary);
   z-index: 10;
+}
+
+@media (width > 768px) {
+  nav {
+    width: fit-content;
+    height: 100dvh;
+    flex-direction: column;
+    justify-content: start;
+    gap: var(--spacing);
+  }
 }

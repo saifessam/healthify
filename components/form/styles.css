@@ -1,8 +1,9 @@
 form {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 15dvh var(--spacing);
+  margin: 10dvh var(--spacing);
   background-color: var(--background-secondary);
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -44,5 +45,18 @@ form {
         justify-content: center;
       }
     }
+  }
+}
+
+@media (width > 768px) {
+  form {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media (width > 1025px) {
+  form {
+    width: 50%;
   }
 }

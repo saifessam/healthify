@@ -45,9 +45,22 @@ section#hero {
     }
 
     & p {
-      width: 80%; /* Should be 57ch for large screens*/
+      width: 80%;
+      max-width: 57ch;
       color: var(--background-secondary);
       text-wrap: balance;
     }
+  }
+}
+
+@media (width > 768px) {
+  section#hero {
+    padding: calc(var(--double-spacing) * 4) var(--double-spacing);
+  }
+}
+
+@media (width > 1025px) {
+  section#hero {
+    padding: calc(var(--double-spacing) * 6) calc(var(--double-spacing) * 2);
   }
 }

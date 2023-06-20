@@ -20,7 +20,9 @@ export async function searchDoctors(term: string) {
 	if (!term) {
 		return NextResponse.json([]).json();
 	} else {
-		const doctors = UsersJSON.filter((user) => user.type === "doctor" && user.name.trim().toLocaleLowerCase().startsWith(term.trim().toLocaleLowerCase()));
-		return doctors.length === 0 ? NextResponse.json({ message: `No doctors found named "${term}"` }).json() : NextResponse.json(doctors).json();
+		const doctors = UsersJSON.filter((user) => user.type === "doctor");
+		if (term === "*") return NextResponse.json(doctors).json();
+		const filteredDoctors = doctors.filter((doctor) => doctor.name.trim().toLocaleLowerCase().startsWith(term.trim().toLocaleLowerCase()));
+		return filteredDoctors.length === 0 ? NextResponse.json({ message: `No doctors found named "${term}"` }).json() : NextResponse.json(filteredDoctors).json();
 	}
 }

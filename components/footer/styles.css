@@ -48,3 +48,14 @@ footer {
     }
   }
 }
+
+@media (width > 1024px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    & .copyrights {
+      grid-column: 1/5;
+    }
+  }
+}

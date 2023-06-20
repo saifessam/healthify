@@ -21,3 +21,23 @@ section#testimonials {
     gap: var(--spacing);
   }
 }
+
+@media (width > 768px) {
+  section#testimonials {
+    & ul {
+      & li {
+        width: calc(50% - var(--spacing));
+      }
+    }
+  }
+}
+
+@media (width > 1360px) {
+  section#testimonials {
+    & ul {
+      & li {
+        width: calc(25% - var(--spacing));
+      }
+    }
+  }
+}

@@ -15,10 +15,6 @@ export default function Header() {
 	const [searching, setSearching] = useState(false);
 	const [data, setData] = useState<{ term: string, results: IDoctor[]; message?: string; }>({ term: "", results: [], message: undefined });
 
-	function toggleSearch() {
-		if (!data.term) return setSearching((prev) => prev = !prev);
-	}
-
 	async function search(term: string) {
 		const doctors: IDoctor[] | { message: string; } = await searchDoctors(term);
 		if (Array.isArray(doctors)) {
@@ -42,7 +38,7 @@ export default function Header() {
 			<Link href={"/"}>
 				<Image src={"/assets/svgs/logo.svg"} alt='Healthify' fill priority />
 			</Link>
-			<Button style={{ theme: 'primary', shape: 'circular', bordered: true }} content={searching ? <X /> : <MagnifyingGlass />} action={toggleSearch} />
+			<Button style={{ theme: 'primary', shape: 'circular', bordered: true }} content={searching ? <X /> : <MagnifyingGlass />} action={() => setSearching((prev) => prev = !prev)} />
 			<aside className={searching ? "visible" : undefined}>
 				<TextInput name='term' placeholder='Search for doctor names' setter={setData} />
 				{data.results.length > 0
