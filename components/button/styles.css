@@ -26,6 +26,13 @@
     background-color: transparent !important;
   }
 
+  &.floating {
+    position: fixed;
+    bottom: calc(var(--spacing) * 4);
+    right: var(--spacing);
+    z-index: 5;
+  }
+
   &.primary {
     background-color: var(--accent-primary);
     color: var(--background-secondary);

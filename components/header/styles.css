@@ -1,12 +1,11 @@
 header {
   position: sticky;
-  height: 10dvh;
   top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 var(--spacing);
+  padding: var(--half-spacing) var(--spacing);
   background-color: var(--background-secondary);
   z-index: 10;
 
@@ -16,15 +15,6 @@ header {
     width: calc(var(--double-spacing) * 3);
     height: auto;
     aspect-ratio: 2/0.5;
-  }
-
-  & button {
-    padding: 0;
-
-    & svg {
-      width: clamp(1rem, 1.5rem, 1.75rem) !important;
-      height: auto !important;
-    }
   }
 
   & aside {

@@ -7,7 +7,7 @@ import Message from "@/components/message";
 import GridSection from "@/components/sections/grid";
 import ShowMoreSection from "@/components/sections/pagination";
 import IDoctor from "@/types/doctor";
-import { Gear, UsersThree } from "@phosphor-icons/react";
+import { Funnel, UsersThree } from "@phosphor-icons/react";
 import { getDoctors } from "../api/users/route";
 
 export default async function Doctors() {
@@ -20,7 +20,7 @@ export default async function Doctors() {
 			<>
 				<GridSection>{doctors.map((doctor) => <DoctorCard doctor={doctor} key={`DoctorsPageDoctor(${doctor.id})`} />)}</GridSection>
 				<ShowMoreSection />
-				<Button style={{ theme: "primary", shape: "normal", bordered: false }} className="floating" content={<>Filters<Gear weight="fill" /></>} />
+				<Button style={{ theme: "primary", shape: "circular", bordered: false }} className="floating" content={<Funnel />} />
 			</>
 		);
 	}
