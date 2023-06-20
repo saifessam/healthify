@@ -28,7 +28,6 @@ section#carousel {
       position: absolute;
       top: 50%;
       translate: 0 -50%;
-      padding: var(--half-spacing);
       z-index: 2;
 
       &.left {

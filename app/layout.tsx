@@ -1,7 +1,7 @@
 import Footer from '@/components/footer';
 import Header from '@/components/header';
-import Menu from '@/components/header/partials/menu';
 import Main from '@/components/main';
+import Navigator from '@/components/navigator';
 import '@/public/styles/app.css';
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
@@ -36,6 +36,7 @@ export default function RootLayout({ children }: Props) {
         <Header />
         <Main>{children}</Main>
         <Footer />
+        <Navigator />
       </body>
     </html>
   );

@@ -50,7 +50,7 @@ export default function DoctorProfile({ doctor }: Props) {
 						</li>
 					}
 				</ul>
-				<Button condition='primary' label='Book now' />
+				<Button style={{ theme: "primary", shape: "normal", bordered: false }} content={'Book now'} />
 			</div>
 			{doctor.reviews &&
 				<div className="footer">

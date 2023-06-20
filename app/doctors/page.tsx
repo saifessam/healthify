@@ -20,7 +20,7 @@ export default async function Doctors() {
 			<>
 				<GridSection>{doctors.map((doctor) => <DoctorCard doctor={doctor} key={`DoctorsPageDoctor(${doctor.id})`} />)}</GridSection>
 				<ShowMoreSection />
-				<Button condition="primary" className="floating" label="Filters" icon={<Gear weight="fill" />} />
+				<Button style={{ theme: "primary", shape: "normal", bordered: false }} className="floating" content={<>Filters<Gear weight="fill" /></>} />
 			</>
 		);
 	}

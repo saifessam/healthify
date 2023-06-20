@@ -41,9 +41,7 @@ footer {
 
   & .copyrights {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: calc(var(--half-spacing) / 2);
+    justify-content: space-between;
 
     & span {
       font: var(--sub-text);

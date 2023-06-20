@@ -4,25 +4,26 @@ import './styles.css';
 
 type Props = {
 	type?: "button" | "submit";
-	condition: "primary" | "secondary" | "danger";
-	label?: string;
-	icon?: ReactNode;
+	style: {
+		theme: "primary" | "secondary";
+		shape: "normal" | "circular";
+		bordered: boolean;
+		disabled?: boolean;
+	};
+	content: ReactNode;
 	className?: string;
-	disabled?: boolean;
 	href?: string;
 	action?(): void;
 };
 
-export default function Button({ type = "button", condition, label, icon, className, disabled, href, action }: Props) {
+export default function Button({ type = "button", style, content, className, href, action }: Props) {
 	function getClassNames(): string[] {
-		const classNames: string[] = ["button"];
-
-		if (condition) classNames.push(condition);
+		const classNames: string[] = ["button", style.theme, style.shape];
+		if (style.bordered) classNames.push("bordered");
 		if (className) classNames.push(className);
-
 		return classNames;
 	}
 
-	if (href) return <Link href={href} className={getClassNames().join(" ")}>{label}{icon}</Link>;
-	return <button className={getClassNames().join(" ")} type={type} onClick={action} disabled={disabled}>{label}{icon}</button>;
+	if (href) return <Link href={href} className={getClassNames().join(" ")}>{content}</Link>;
+	return <button className={getClassNames().join(" ")} type={type} onClick={action} disabled={style.disabled}>{content}</button>;
 }

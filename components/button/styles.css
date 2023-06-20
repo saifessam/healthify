@@ -3,64 +3,69 @@
   justify-content: center;
   align-items: center;
   gap: calc(var(--half-spacing) / 2);
-  padding: var(--half-spacing) var(--spacing);
-  border-radius: var(--circular-border-radius);
   font: var(--main-label);
   white-space: nowrap;
   cursor: pointer;
 
   & svg {
-    width: clamp(0.8rem, 1rem, 1.25rem);
-    height: auto;
+    width: var(--spacing) !important;
+    height: var(--spacing) !important;
+  }
+
+  &.normal {
+    padding: var(--half-spacing) var(--spacing);
+    border-radius: var(--border-radius);
+  }
+
+  &.circular {
+    padding: var(--half-spacing);
+    border-radius: var(--circular-border-radius);
+  }
+
+  &.bordered {
+    background-color: transparent !important;
   }
 
   &.primary {
     background-color: var(--accent-primary);
     color: var(--background-secondary);
-    border: 2px solid var(--accent-primary);
 
     & svg path {
       fill: var(--background-secondary);
     }
 
-    &:not(:disabled):hover {
-      background-color: var(--accent-secondary);
+    &.bordered {
+      border: 2px solid var(--accent-primary);
+      color: var(--accent-primary);
+
+      & svg path {
+        fill: var(--accent-primary);
+      }
     }
   }
 
   &.secondary {
+    background-color: var(--background-primary);
     color: var(--accent-primary);
 
     & svg path {
       fill: var(--accent-primary);
     }
-  }
 
-  &.danger {
-    background-color: var(--red-primary);
-    color: var(--background-secondary);
-    border: 2px solid var(--red-primary);
+    &.bordered {
+      border: 2px solid var(--background-secondary);
+      color: var(--background-secondary);
 
-    & svg path {
-      fill: var(--background-secondary);
+      & svg path {
+        fill: var(--background-secondary);
+      }
     }
-
-    &:not(:disabled):hover {
-      background-color: var(--red-secondary);
-    }
-  }
-
-  &.floating {
-    position: fixed;
-    bottom: var(--spacing);
-    right: var(--spacing);
-    z-index: 5;
   }
 
   &:disabled {
+    border-color: transparent !important;
     background-color: var(--text-secondary);
     color: var(--background-secondary);
     cursor: default;
-    border-color: transparent;
   }
 }

@@ -17,6 +17,7 @@ export default function Footer() {
 		const isValidEmail = regex.test(data.email);
 		if (!isValidEmail) return alert("Email address must be provided valid");
 
+		if (!confirm(TextsJSON.newsletter)) return;
 		alert(`${data.email} has subscribed successfully`);
 	}
 
@@ -49,7 +50,6 @@ export default function Footer() {
 			<section id='newsletter'>
 				<h6>Newsletter</h6>
 				<ActionInput name='email' placeholder='Email address' setter={setData} action={subscribe} icon={<PaperPlaneTilt />} />
-				<p>{TextsJSON.newsletter}</p>
 			</section>
 			<div className='copyrights'>
 				<span>Copyrights © {new Date().getFullYear()}</span>

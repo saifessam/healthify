@@ -34,12 +34,12 @@ export default function CarouselSection({ title, children }: Props) {
 		<section id='carousel'>
 			<div className="header">
 				<h4>{title}</h4>
-				<Button condition='secondary' label={"View more"} icon={<ArrowRight />} href='/doctors' />
+				<Button style={{ theme: 'secondary', shape: 'normal', bordered: false }} content={<>View more <ArrowRight /></>} href='/doctors' />
 			</div>
 			<div className='carousel'>
-				<Button condition={'primary'} className="arrow left" disabled={offset === 0} icon={<CaretLeft weight='bold' />} action={prev} />
+				<Button style={{ theme: 'primary', shape: 'circular', bordered: false, disabled: offset === 0 }} className="arrow left" content={<CaretLeft weight='bold' />} action={prev} />
 				<div className="slides" style={{ translate: -offset }} ref={slides}>{children}</div>
-				<Button condition='primary' className="arrow right" disabled={offset >= (slidesWidth - cardWidth)} icon={<CaretRight weight='bold' />} action={next} />
+				<Button style={{ theme: 'primary', shape: 'circular', bordered: false, disabled: offset >= (slidesWidth - cardWidth) }} className="arrow right" content={<CaretRight weight='bold' />} action={next} />
 			</div>
 		</section>
 	);

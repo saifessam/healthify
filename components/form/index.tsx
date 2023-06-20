@@ -20,7 +20,7 @@ export default function Form({ onSubmit, title, children, links }: Props) {
 				{children}
 			</div>
 			<div className="footer">
-				<Button type='submit' condition='primary' label='Submit' />
+				<Button type='submit' style={{ theme: 'primary', shape: 'normal', bordered: false }} content={'Submit'} />
 				{links && <div className={links.length > 1 ? "links" : "links centered"}>{links.map((link, index) => <Anchor to={link.to} label={link.label} key={`FormLink(${index})`} />)}</div>}
 			</div>
 		</form>

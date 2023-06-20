@@ -1,6 +1,6 @@
 import Button from '@/components/button';
 import IDoctor from '@/types/doctor';
-import { ArrowCircleRight } from '@phosphor-icons/react';
+import { ArrowSquareOut } from '@phosphor-icons/react';
 import Image from 'next/image';
 import './styles.css';
 
@@ -18,7 +18,7 @@ export default function DoctorTile({ doctor }: Props) {
 				<h6>{doctor.name}</h6>
 				<small>{doctor.specialization}</small>
 			</div>
-			<Button condition='secondary' href={`/doctors/${doctor.id}`} icon={<ArrowCircleRight weight='fill' />} />
+			<Button style={{ theme: 'primary', shape: 'circular', bordered: false }} content={<ArrowSquareOut />} href={`/doctors/${doctor.id}`} />
 		</div>
 	);
 }
