@@ -1,0 +1,29 @@
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--half-spacing) var(--spacing);
+  background-color: var(--background-secondary);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+
+  & > a {
+    position: relative;
+    display: flex;
+    width: calc(var(--double-spacing) * 3);
+    height: auto;
+    aspect-ratio: 2/0.5;
+  }
+
+  & button {
+    padding: 0;
+
+    & svg {
+      width: clamp(1rem, 1.5rem, 1.75rem) !important;
+      height: auto !important;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+section#carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--spacing);
+  padding: var(--spacing);
+
+  & .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h4 {
+      font: var(--main-title);
+    }
+
+    & button {
+      padding: 0;
+    }
+  }
+
+  & .carousel {
+    position: relative;
+
+    & .arrow {
+      position: absolute;
+      top: 50%;
+      translate: 0 -50%;
+      padding: var(--half-spacing);
+      z-index: 2;
+
+      &.left {
+        left: var(--half-spacing);
+      }
+
+      &.right {
+        right: var(--half-spacing);
+      }
+    }
+
+    & .slides {
+      width: fit-content;
+      display: flex;
+      justify-content: flex-start;
+      gap: var(--half-spacing);
+
+      & > * {
+        width: 50dvw;
+        flex-grow: 1;
+      }
+    }
+  }
+}

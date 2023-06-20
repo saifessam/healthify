@@ -1,0 +1,9 @@
+a {
+  font: var(--sub-label);
+  color: var(--accent-primary);
+
+  & span {
+    font: var(--sub-label);
+    color: var(--text-secondary);
+  }
+}

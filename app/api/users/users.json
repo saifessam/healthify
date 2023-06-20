@@ -1,0 +1,329 @@
+[
+	{
+		"id": "1",
+		"name": "Ahmed Abdelrahman",
+		"image": "1.jpg",
+		"email": "ahmedabdelrahman@gmail.com",
+		"phone": "0123456670",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Cardiologist",
+		"location": {
+			"city": "Maadi",
+			"state": "Cairo",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 1000,
+			"to": 5000
+		},
+		"verified": true,
+		"bio": "Dr. Ahmed Abdelrahman is a highly experienced cardiologist with over 10 years of practice in the field. He is dedicated to providing the best possible care to his patients, and is known for his compassionate and patient-centered approach to treatment."
+	},
+	{
+		"id": "2",
+		"name": "Sara Ali",
+		"image": "2.jpg",
+		"email": "saraali@gmail.com",
+		"phone": "0123456671",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Pediatrician",
+		"location": {
+			"city": "Zamalek",
+			"state": "Cairo",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 800,
+			"to": 3000
+		},
+		"verified": true,
+		"bio": "Dr. Sara Ali is a compassionate and caring pediatrician with a keen interest in child development and behavior. She is committed to providing the highest quality care to her young patients and their families, and is known for her warm and friendly demeanor."
+	},
+	{
+		"id": "3",
+		"name": "Mohamed Hassan",
+		"image": "3.jpg",
+		"email": "mohammedhassan@gmail.com",
+		"phone": "0123456672",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Dentist",
+		"location": {
+			"city": "Giza",
+			"state": "Cairo",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 500,
+			"to": 3000
+		},
+		"verified": false,
+		"bio": "Dr. Mohammed Hassan is a skilled and experienced dentist, with a particular interest in cosmetic dentistry and orthodontics. He is committed to helping his patients achieve healthy and beautiful smiles, and is known for his gentle and patient approach to treatment."
+	},
+	{
+		"id": "4",
+		"name": "Aya Samir",
+		"image": "4.jpg",
+		"email": "ayasamir@gmail.com",
+		"phone": "0123456673",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Psychiatrist",
+		"location": {
+			"city": "New Cairo",
+			"state": "Cairo",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 2500,
+			"to": 10000
+		},
+		"verified": true,
+		"bio": "Dr. Aya Samir is a highly skilled and compassionate psychiatrist, with over 15 years of experience in the field. She is committed to providing the best possible care to her patients, and is known for her empathetic and non-judgmental approach to treatment."
+	},
+	{
+		"id": "5",
+		"name": "Ali Ibrahim",
+		"image": "5.jpg",
+		"email": "aliibrahim@gmail.com",
+		"phone": "0123456674",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Ophthalmologist",
+		"location": {
+			"city": "Alexandria",
+			"state": "Alexandria",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 1200,
+			"to": 7000
+		},
+		"verified": true,
+		"bio": "Dr. Ali Ibrahim is a highly skilled and experienced ophthalmologist, with a particular interest in LASIK and other refractive surgeries. He is committed to providing the highest quality care to his patients, and is known for his meticulous attention to detail."
+	},
+	{
+		"id": "6",
+		"name": "Nourhan Mohamed",
+		"image": "6.jpg",
+		"email": "nourhanmohamed@gmail.com",
+		"phone": "0123456675",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Gynecologist",
+		"location": {
+			"city": "Heliopolis",
+			"state": "Cairo",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 1500,
+			"to": 2000
+		},
+		"verified": false,
+		"bio": "Dr. Nourhan Mohamed is a compassionate and caring gynecologist, with a particular interest in women's reproductive health and fertility. She is dedicated to providing the best possible care to her patients, and is known for her warm and friendly demeanor."
+	},
+	{
+		"id": "7",
+		"name": "Youssef Ali",
+		"image": "7.jpg",
+		"email": "youssefali@gmail.com",
+		"phone": "0123456676",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Neurologist",
+		"location": {
+			"city": "Mohandeseen",
+			"state": "Giza",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 3000,
+			"to": 12000
+		},
+		"verified": false,
+		"bio": "Dr. Youssef Ali is a highly skilled neurologist with a particular interest in the treatment of neurological disorders such as epilepsy, multiple sclerosis, and Parkinson's disease. He is dedicated to providing the highest quality care to his patients, and is known for his compassionate and patient-centered approach to treatment."
+	},
+	{
+		"id": "8",
+		"name": "Hala Mohamed",
+		"image": "8.jpg",
+		"email": "halamohamed@gmail.com",
+		"phone": "0123456677",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Orthopedist",
+		"location": {
+			"city": "Dokki",
+			"state": "Giza",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 1000,
+			"to": 8000
+		},
+		"verified": false,
+		"bio": "Dr. Hala Mohamed is a skilled and experienced orthopedic surgeon, with a particular interest in joint replacement surgery. She is dedicated to providing the best possible care to her patients, and is known for her patient-centered approach to treatment."
+	},
+	{
+		"id": "9",
+		"name": "Mahmoud Ali",
+		"image": "9.jpg",
+		"email": "mahmoudali@gmail.com",
+		"phone": "0123456678",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Dermatologist",
+		"location": {
+			"city": "Nasr City",
+			"state": "Cairo",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 1500,
+			"to": 6000
+		},
+		"verified": true,
+		"bio": "Dr. Mahmoud Ali is a highly skilled and experienced dermatologist, with a particular interest in the treatment of skin diseases such as eczema, psoriasis, and acne. He is dedicated to providing the best possible care to his patients, and is known for his compassionate and patient-centered approach to treatment."
+	},
+	{
+		"id": "10",
+		"name": "Mona Ahmed",
+		"image": "10.jpg",
+		"email": "monaahmed@gmail.com",
+		"phone": "0123456679",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Oncologist",
+		"location": {
+			"city": "Mokattam",
+			"state": "Cairo",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 5000,
+			"to": 15000
+		},
+		"verified": true,
+		"bio": "Dr. Mona Ahmed is a highly skilled and compassionate oncologist, with a particular interest in the treatment of breast cancer. She is dedicated to providing the best possible care to her patients, and is known for her empathetic and patient-centered approach to treatment."
+	},
+	{
+		"id": "11",
+		"name": "Kareem Hussein",
+		"image": "11.jpg",
+		"email": "kareemhussein@gmail.com",
+		"phone": "0123456770",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Urologist",
+		"location": {
+			"city": "Downtown",
+			"state": "Cairo",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 2000,
+			"to": 8000
+		},
+		"verified": true,
+		"bio": "Dr. Kareem Hussein is a skilled and experienced urologist, with a particular interest in the treatment of kidney stones and prostate cancer. He is dedicated to providing the best possible care to his patients, and is known for his patient-centered approach to treatment."
+	},
+	{
+		"id": "12",
+		"name": "Nadia Ali",
+		"image": "12.jpg",
+		"email": "nadiaali@gmail.com",
+		"phone": "0123456771",
+		"password": "!Pwd!1234",
+		"type": "doctor",
+		"specialization": "Endocrinologist",
+		"location": {
+			"city": "6th of October",
+			"state": "Giza",
+			"country": "Egypt"
+		},
+		"priceRange": {
+			"from": 3000,
+			"to": 10000
+		},
+		"verified": true,
+		"bio": "Dr. Nadia Ali is a highly skilled endocrinologist, with a particular interest in the treatment of diabetes, thyroid disorders, and hormonal imbalances. She is dedicated to providing the best possible care to her patients, and is known for her patient-centered approach to treatment."
+	},
+	{
+		"id": "13",
+		"name": "Ahmed Mahmoud",
+		"email": "ahmedmahmoud@gmail.com",
+		"phone": "0123456780",
+		"password": "!Pwd!1234",
+		"image": "13.jpg",
+		"type": "patient"
+	},
+	{
+		"id": "14",
+		"name": "Fatma Ali",
+		"email": "fatmaali@gmail.com",
+		"phone": "0123456781",
+		"password": "!Pwd!1234",
+		"image": "14.jpg",
+		"type": "patient"
+	},
+	{
+		"id": "15",
+		"name": "Mohamed Hassan",
+		"email": "mohamedhassan@gmail.com",
+		"phone": "0123456782",
+		"password": "!Pwd!1234",
+		"image": "15.jpg",
+		"type": "patient"
+	},
+	{
+		"id": "16",
+		"name": "Hassan Ali",
+		"email": "hassanali@gmail.com",
+		"phone": "0123456783",
+		"password": "password!Pwd!1234",
+		"image": "16.jpg"
+	},
+	{
+		"id": "17",
+		"name": "Nadia Ahmed",
+		"email": "nadiaahmed@gmail.com",
+		"phone": "0123456784",
+		"password": "password!Pwd!1234",
+		"image": "17.jpg"
+	},
+	{
+		"id": "18",
+		"name": "Mahmoud Hassan",
+		"email": "mahmoudhassan@gmail.com",
+		"phone": "0123456785",
+		"password": "password!Pwd!1234",
+		"image": "18.jpg"
+	},
+	{
+		"id": "19",
+		"name": "Mona Ali",
+		"email": "monaali@gmail.com",
+		"phone": "0123456786",
+		"password": "password!Pwd!1234",
+		"image": "19.jpg"
+	},
+	{
+		"id": "20",
+		"name": "Hoda Mahmoud",
+		"email": "hodamahmoud@gmail.com",
+		"phone": "0123456787",
+		"password": "password!Pwd!1234",
+		"image": "20.jpg"
+	},
+	{
+		"id": "21",
+		"name": "Khaled Ahmed",
+		"email": "khaledahmed@gmail.com",
+		"phone": "0123456788",
+		"password": "password!Pwd!1234",
+		"image": "21.jpg"
+	}
+]

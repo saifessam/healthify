@@ -1,0 +1,51 @@
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  background-color: var(--background-secondary);
+
+  & section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--half-spacing);
+
+    & h6 {
+      font: var(--main-title);
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: calc(var(--half-spacing) / 2);
+
+      & li {
+        display: flex;
+
+        & a {
+          color: var(--text-secondary);
+        }
+      }
+    }
+
+    &#newsletter {
+      & p {
+        font: var(--sub-text);
+        color: var(--text-secondary);
+      }
+    }
+  }
+
+  & .copyrights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & span {
+      font: var(--sub-text);
+    }
+  }
+}

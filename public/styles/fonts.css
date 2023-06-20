@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('./../assets/fonts/GeneralSans/ExtraLight.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('./../assets/fonts/GeneralSans/Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('./../assets/fonts/GeneralSans/Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('./../assets/fonts/GeneralSans/Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('./../assets/fonts/GeneralSans/Semibold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('./../assets/fonts/GeneralSans/Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RedHatDisplay';
+  src: url('./../assets/fonts/RedHatDisplay/BlackItalic.ttf');
+  font-weight: 900;
+  font-style: italic;
+}

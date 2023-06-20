@@ -1,0 +1,51 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--half-spacing);
+  padding: var(--spacing);
+  background-color: var(--background-primary);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+
+  & .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--half-spacing);
+
+    & .image {
+      position: relative;
+      width: var(--double-spacing);
+      height: auto;
+      aspect-ratio: 1/1;
+
+      & img {
+        object-fit: cover;
+        border-radius: var(--circular-border-radius);
+      }
+    }
+
+    & div {
+      display: flex;
+      flex-direction: column;
+
+      & span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font: var(--sub-title);
+        color: var(--accent-primary);
+      }
+
+      & small {
+        font: var(--sub-text);
+        color: var(--text-secondary);
+      }
+    }
+  }
+
+  & p {
+    color: var(--text-secondary);
+  }
+}

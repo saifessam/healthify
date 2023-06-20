@@ -1,0 +1,30 @@
+[
+	{
+		"id": "1",
+		"image": "1.jpg",
+		"text": "I recently moved to a new city and needed to find a doctor for a routine check-up. Healthify made it so easy to search for doctors in my area based on specialty and availability. I was able to book an appointment with a great doctor within minutes!",
+		"name": "Amira Khalil",
+		"date": "15 January, 2023"
+	},
+	{
+		"id": "2",
+		"image": "2.jpg",
+		"text": "As a busy professional, I don't have time to spend hours searching for a doctor and booking appointments. Healthify's user-friendly interface made the whole process so easy. I was able to quickly find a doctor who met my needs and book an appointment at a time that worked for me.",
+		"name": "Farida Mahmoud",
+		"date": "12 April, 2023"
+	},
+	{
+		"id": "3",
+		"image": "3.jpg",
+		"text": "I've been using Healthify for a while now and it's been a game-changer for me. I have a chronic condition that requires regular check-ups with a specialist, and Healthify makes it so easy to book appointments and keep track of my schedule.",
+		"name": "Ahmed Hassan",
+		"date": "22 March, 2023"
+	},
+	{
+		"id": "4",
+		"image": "4.jpg",
+		"text": "I was hesitant to try a new doctor, but Healthify's review system gave me the confidence to book an appointment. I was able to read reviews from other patients and make an informed decision about which doctor to choose.",
+		"name": "Mohamed Khalid",
+		"date": "06 April, 2023"
+	}
+]

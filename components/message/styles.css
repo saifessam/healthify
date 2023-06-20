@@ -1,0 +1,25 @@
+.message {
+  height: 50dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+
+  & article {
+    display: flex;
+    align-items: center;
+    gap: var(--half-spacing);
+
+    & svg {
+      width: clamp(1.5rem, 2rem, 2.5rem);
+      height: auto;
+    }
+
+    & pre {
+      font: var(--sub-text);
+      padding-left: var(--half-spacing);
+      border-left: 2px solid var(--text-primary);
+    }
+  }
+}

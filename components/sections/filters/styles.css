@@ -1,0 +1,28 @@
+#filters {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing);
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  z-index: 20;
+
+  &.visible {
+    display: flex;
+  }
+
+  & > button {
+    padding: var(--half-spacing);
+    position: absolute;
+    top: var(--half-spacing);
+    right: var(--spacing);
+  }
+
+  & form {
+    width: 100%;
+  }
+}

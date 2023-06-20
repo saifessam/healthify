@@ -1,0 +1,13 @@
+section#call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+  padding: var(--double-spacing);
+
+  & h3 {
+    font: var(--sub-title);
+    text-align: center;
+  }
+}

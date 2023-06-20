@@ -1,0 +1,122 @@
+.doctor-profile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  margin: var(--spacing);
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius);
+
+  & .header {
+    display: flex;
+    align-items: center;
+    gap: var(--half-spacing);
+
+    & .image {
+      position: relative;
+      aspect-ratio: 1/1;
+      max-width: var(--double-spacing);
+      height: auto;
+      border-radius: var(--circular-border-radius);
+      overflow: hidden;
+
+      & img {
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+
+    & div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      & h4 {
+        max-width: 20ch;
+        white-space: nowrap;
+        font: var(--sub-title);
+        color: var(--accent-primary);
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      & small {
+        font: var(--sub-label);
+        color: var(--text-secondary);
+      }
+    }
+  }
+
+  & .body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--half-spacing);
+
+    & li {
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--half-spacing) / 2);
+      padding: var(--half-spacing);
+      background-color: var(--background-primary);
+      border-radius: var(--half-border-radius);
+
+      & div {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: calc(var(--half-spacing) / 2);
+
+        & h6 {
+          font: var(--main-label);
+        }
+
+        & svg path {
+          fill: var(--text-secondary);
+        }
+      }
+
+      & small {
+        font: var(--sub-text);
+        color: var(--text-secondary);
+      }
+    }
+  }
+
+  & .footer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+
+    & .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font: var(--main-title);
+
+      & small {
+        display: flex;
+        align-items: flex-start;
+        gap: 2px;
+        font: var(--sub-label);
+
+        & svg path {
+          fill: var(--yellow);
+        }
+      }
+    }
+
+    & .body {
+      max-height: 30dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: var(--half-spacing);
+      overflow: hidden;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

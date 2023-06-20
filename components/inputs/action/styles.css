@@ -1,0 +1,26 @@
+.action-input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(var(--half-spacing) / 2);
+  background-color: var(--background-primary);
+  border-radius: var(--half-border-radius);
+  overflow: hidden;
+
+  & input {
+    flex-grow: 1;
+    padding-left: var(--half-spacing);
+    font: var(--sub-label);
+  }
+
+  & input::placeholder {
+    color: var(--text-secondary);
+  }
+
+  & button {
+    padding: var(--half-spacing);
+    border-radius: var(--half-border-radius);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

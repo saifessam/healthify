@@ -1,0 +1,36 @@
+:root {
+  --background-primary: #f2f9f1;
+  --background-secondary: #ffffff;
+  --accent-primary: #539165;
+  --accent-secondary: #98bda3;
+  --text-primary: #202020;
+  --text-secondary: #b2babe;
+  --yellow: #f9d949;
+  --orange: #ff8400;
+  --red-primary: #ed2b2a;
+  --red-secondary: #ed2a2ab9;
+
+  /* Logos Font Styles */
+  --main-logo: 700 clamp(1.5rem, 2rem, 3rem) 'RedHatDisplay', sans-serif;
+  --sub-logo: 700 clamp(1rem, 1.25rem, 2rem) 'RedHatDisplay', sans-serif;
+  /* Headings Font Styles */
+  --main-heading: 700 clamp(1.5rem, 2rem, 3rem) 'GeneralSans', sans-serif;
+  --sub-heading: 700 clamp(1rem, 1.25rem, 2rem) 'GeneralSans', sans-serif;
+  /* Titles Font Styles */
+  --main-title: 600 clamp(1rem, 1.25rem, 1.5rem) 'GeneralSans', sans-serif;
+  --sub-title: 600 clamp(0.8rem, 1rem, 1.25rem) 'GeneralSans', sans-serif;
+  /* Labels Font Styles */
+  --main-label: 500 clamp(0.8rem, 1rem, 1.25rem) 'GeneralSans', sans-serif;
+  --sub-label: 500 clamp(0.6rem, 0.8rem, 1rem) 'GeneralSans', sans-serif;
+  /* Texts Font Styles */
+  --main-text: 400 clamp(0.8rem, 1rem, 1.25rem) 'GeneralSans', sans-serif;
+  --sub-text: 400 clamp(0.7rem, 0.8rem, 1rem) 'GeneralSans', sans-serif;
+
+  /* Spacing Units */
+  --spacing: 1.5rem;
+  --double-spacing: 3rem;
+  --half-spacing: 0.75rem;
+  --border-radius: 1.5rem;
+  --half-border-radius: 0.75rem;
+  --circular-border-radius: 10rem;
+}

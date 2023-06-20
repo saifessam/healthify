@@ -1,0 +1,26 @@
+.radio-input {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--half-spacing) / 2);
+  cursor: pointer;
+
+  & svg path {
+    fill: var(--accent-secondary);
+  }
+
+  & small {
+    font: var(--sub-label);
+    color: var(--accent-secondary);
+    user-select: none;
+  }
+
+  &.checked {
+    & svg path {
+      fill: var(--accent-primary);
+    }
+
+    & small {
+      color: var(--accent-primary);
+    }
+  }
+}

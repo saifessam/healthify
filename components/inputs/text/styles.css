@@ -1,0 +1,10 @@
+.text-input {
+  font: var(--sub-label);
+  padding: var(--half-spacing);
+  border-radius: var(--half-border-radius);
+  background-color: var(--background-primary);
+
+  &::placeholder {
+    color: var(--text-secondary);
+  }
+}

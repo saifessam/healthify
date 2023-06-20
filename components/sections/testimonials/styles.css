@@ -1,0 +1,23 @@
+section#testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  margin: var(--spacing);
+  border-radius: var(--border-radius);
+  background-color: var(--background-secondary);
+
+  & h1 {
+    font: var(--main-heading);
+    color: var(--accent-primary);
+    text-align: center;
+  }
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: var(--spacing);
+  }
+}
