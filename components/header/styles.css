@@ -46,6 +46,10 @@ header {
       background-color: var(--background-primary);
       border-radius: var(--half-border-radius);
       overflow-y: auto;
+
+      & > * {
+        flex-shrink: 0;
+      }
     }
   }
 }
@@ -59,7 +63,6 @@ header {
         max-height: 30dvh;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: var(--half-spacing);
         padding: 0;
         background-color: transparent;
         border-radius: 0;

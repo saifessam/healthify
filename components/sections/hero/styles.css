@@ -61,6 +61,7 @@ section#hero {
 
 @media (width > 1025px) {
   section#hero {
-    padding: calc(var(--double-spacing) * 6) calc(var(--double-spacing) * 2);
+    min-height: 75dvh !important;
+    padding: calc(var(--double-spacing) * 2);
   }
 }
