@@ -1,8 +1,9 @@
 "use client";
 
 import { searchDoctors } from '@/app/api/users/route';
+import MagnifyingGlassIcon from '@/public/assets/svgs/icons/regular/magnifying-glass.svg';
+import XIcon from '@/public/assets/svgs/icons/regular/x.svg';
 import IDoctor from '@/types/doctor';
-import { MagnifyingGlass, X } from '@phosphor-icons/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -38,7 +39,7 @@ export default function Header() {
 			<Link href={"/"}>
 				<Image src={"/assets/svgs/logo.svg"} alt='Healthify' fill priority />
 			</Link>
-			<Button style={{ theme: 'primary', shape: 'circular', outlined: true }} content={searching ? <X /> : <MagnifyingGlass />} action={() => setSearching((prev) => prev = !prev)} />
+			<Button style={{ theme: 'primary', shape: 'circular', outlined: true }} content={searching ? <XIcon /> : <MagnifyingGlassIcon />} action={() => setSearching((prev) => prev = !prev)} />
 			<aside className={searching ? "visible" : undefined}>
 				<TextInput name='term' placeholder='Search for doctor names' setter={setData} />
 				{data.results.length > 0

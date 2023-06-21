@@ -77,8 +77,12 @@
       overflow: hidden;
     }
 
-    & svg path {
-      fill: var(--accent-primary);
+    & svg {
+      width: 1rem;
+      height: 1rem;
+      & path {
+        fill: var(--accent-primary);
+      }
     }
   }
 
@@ -100,8 +104,12 @@
       text-overflow: ellipsis;
       overflow: hidden;
 
-      & svg path {
-        fill: var(--text-secondary);
+      & svg {
+        width: 1rem;
+        height: 1rem;
+        & path {
+          fill: var(--text-secondary);
+        }
       }
     }
   }

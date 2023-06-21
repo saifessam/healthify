@@ -103,8 +103,12 @@
               font: var(--main-label);
             }
 
-            & svg path {
-              fill: var(--text-secondary);
+            & svg {
+              width: 1rem;
+              height: 1rem;
+              & path {
+                fill: var(--text-secondary);
+              }
             }
           }
 

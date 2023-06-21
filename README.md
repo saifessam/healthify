@@ -47,3 +47,7 @@
     - Price
 
 - [x] Build the `DoctorPage`
+
+### **Modifications #15**
+
+> Updated `CarouselSection`, Removed `ShowMoreSection`, Migrated to local svg icons, Fixed some UI responsiveness issus

@@ -1,6 +1,6 @@
 import Button from '@/components/button';
+import ArrowSquareInIcon from '@/public/assets/svgs/icons/regular/arrow-square-in.svg';
 import IDoctor from '@/types/doctor';
-import { ArrowSquareOut } from '@phosphor-icons/react';
 import Image from 'next/image';
 import './styles.css';
 
@@ -18,7 +18,7 @@ export default function DoctorTile({ doctor }: Props) {
 				<h6>{doctor.name}</h6>
 				<small>{doctor.specialization}</small>
 			</div>
-			<Button style={{ theme: 'primary', shape: 'circular', outlined: false, small: true }} content={<ArrowSquareOut />} href={`/doctors/${doctor.id}`} />
+			<Button style={{ theme: 'primary', shape: 'circular', outlined: false, small: true }} content={<ArrowSquareInIcon />} href={`/doctors/${doctor.id}`} />
 		</div>
 	);
 }

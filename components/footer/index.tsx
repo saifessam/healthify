@@ -1,10 +1,10 @@
 "use client";
 
-import { PaperPlaneTilt } from '@phosphor-icons/react';
+import PaperPlaneTiltIcon from '@/public/assets/svgs/icons/regular/paper-plane-tilt.svg';
+import TextsJSON from '@/public/data/texts.json';
 import { useState } from 'react';
 import Anchor from '../anchor';
 import ActionInput from '../inputs/action';
-import TextsJSON from '@/public/data/texts.json';
 import './styles.css';
 
 export default function Footer() {
@@ -49,7 +49,7 @@ export default function Footer() {
 			</section>
 			<section id='newsletter'>
 				<h6>Newsletter</h6>
-				<ActionInput name='email' placeholder='Email address' setter={setData} action={subscribe} icon={<PaperPlaneTilt />} />
+				<ActionInput name='email' placeholder='Email address' setter={setData} action={subscribe} icon={<PaperPlaneTiltIcon />} />
 				<Anchor to='https://www.linkedin.com/in/saifeldeenessam/' label={{ suffix: "Designed and developed by", text: "Saif Essam" }} noReferrer />
 			</section>
 		</footer>

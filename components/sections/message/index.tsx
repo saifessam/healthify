@@ -1,4 +1,3 @@
-import { useRouter } from 'next/navigation';
 import { ReactNode } from 'react';
 import Button from '../../button';
 import './styles.css';
@@ -13,15 +12,13 @@ type Props = {
 };
 
 export default function MessageSection({ icon, messages, redirect }: Props) {
-	const router = useRouter();
-
 	return (
 		<section id='message'>
 			<article>
 				{icon}
 				<pre>{messages.join('\r\n')}</pre>
 			</article>
-			{redirect && <Button style={{ theme: 'primary', shape: 'normal', outlined: true }} action={() => router.push(redirect.to)} content={redirect.label} />}
+			{redirect && <Button style={{ theme: 'primary', shape: 'normal', outlined: true }} content={redirect.label} href='redirect.to' />}
 		</section>
 	);
 }

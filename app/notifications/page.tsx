@@ -1,8 +1,6 @@
-"use client";
-
-import { Bell } from "@phosphor-icons/react";
 import MessageSection from "@/components/sections/message";
+import BellIcon from "@/public/assets/svgs/icons/fill/bell.svg";
 
 export default function Notifications() {
-	return <MessageSection icon={<Bell weight="fill" />} messages={["No notifications available.", "Always keep checking for any new updates."]} />;
+	return <MessageSection icon={<BellIcon />} messages={["No notifications available.", "Always keep checking for any new updates."]} />;
 }

@@ -4,48 +4,59 @@ section#carousel {
   justify-content: flex-start;
   gap: var(--spacing);
   padding: var(--spacing);
+  margin: var(--spacing);
+  border-radius: var(--border-radius);
+  background-color: var(--background-secondary);
 
-  & .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--spacing);
-
-    & h4 {
-      font: var(--main-title);
-    }
-
-    & a {
-      padding: 0;
-    }
+  & h4 {
+    font: var(--main-title);
   }
 
-  & .carousel {
-    position: relative;
+  & .body {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--half-spacing);
     overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 
-    & .arrow {
-      position: absolute;
-      top: 50%;
-      translate: 0 -50%;
-      z-index: 2;
-
-      &.left {
-        left: var(--half-spacing);
-      }
-
-      &.right {
-        right: var(--half-spacing);
-      }
+    & > * {
+      flex: 1 0 60%;
+      scroll-snap-align: start;
     }
 
-    & .slides {
+    & #last {
+      aspect-ratio: 3/4;
       display: flex;
-      width: fit-content;
-      justify-content: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--background-primary);
+      border-radius: var(--border-radius);
+    }
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+@media (width >= 768px) {
+  section#carousel {
+    & .body {
       & > * {
-        flex-shrink: 0;
+        flex-basis: 40%;
+      }
+    }
+  }
+}
+
+@media (width >= 1024px) {
+  section#carousel {
+    & .body {
+      & > * {
+        flex-basis: 30%;
       }
     }
   }

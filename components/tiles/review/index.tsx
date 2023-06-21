@@ -1,4 +1,4 @@
-import { Star } from "@phosphor-icons/react";
+import StarIcon from "@/public/assets/svgs/icons/fill/star.svg";
 import Image from "next/image";
 import ReviewType from "../../../types/review";
 import "./styles.css";
@@ -18,7 +18,7 @@ export default function Review({ data }: Props) {
 					<span>{data.user.name}</span>
 					<small>{data.createdAt}</small>
 				</div>
-				<small>{data.rate}<Star weight="fill" /></small>
+				<small>{data.rate}<StarIcon /></small>
 			</div>
 			<div className="body">
 				<p>{data.text}</p>

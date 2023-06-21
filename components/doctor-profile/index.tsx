@@ -1,5 +1,10 @@
+"use client";
+
 import useWindowSize from '@/hooks/window-size';
-import { Coins, MapPin, Star, TextAlignLeft } from '@phosphor-icons/react';
+import CoinsIcon from "@/public/assets/svgs/icons/fill/coins.svg";
+import MapPinIcon from "@/public/assets/svgs/icons/fill/map-pin.svg";
+import StarIcon from "@/public/assets/svgs/icons/fill/star.svg";
+import TextAlignLeftIcon from "@/public/assets/svgs/icons/fill/text-align-left.svg";
 import Image from 'next/image';
 import IDoctor from '../../types/doctor';
 import getAverageRating from '../../utilities/get-average-ratings';
@@ -25,20 +30,20 @@ export default function DoctorProfile({ doctor }: Props) {
 						<h4>Dr. {doctor.name}</h4>
 						<small>{doctor.specialization}</small>
 					</div>
-					{doctor.reviews && <small>{getAverageRating(doctor.reviews.map((review) => review.rate))} <Star weight="fill" /></small>}
+					{doctor.reviews && <small>{getAverageRating(doctor.reviews.map((review) => review.rate))} <StarIcon /></small>}
 				</div>
 				<div className="body">
 					<ul>
 						<li>
 							<div>
-								<MapPin weight='fill' />
+								<MapPinIcon />
 								<h6>Location</h6>
 							</div>
 							<small>{doctor.location.city}, {doctor.location.state}, {doctor.location.country}</small>
 						</li>
 						<li>
 							<div>
-								<Coins weight='fill' />
+								<CoinsIcon />
 								<h6>Price Range</h6>
 							</div>
 							<small>{getCurrencyFormat(doctor.priceRange.from)} ~ {getCurrencyFormat(doctor.priceRange.to)}</small>
@@ -46,7 +51,7 @@ export default function DoctorProfile({ doctor }: Props) {
 						{doctor.bio &&
 							<li>
 								<div>
-									<TextAlignLeft weight='fill' />
+									<TextAlignLeftIcon />
 									<h6>Bio</h6>
 								</div>
 								<small>{doctor.bio}</small>

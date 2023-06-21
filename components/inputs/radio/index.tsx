@@ -1,4 +1,5 @@
-import { CheckCircle, Circle } from '@phosphor-icons/react';
+import CheckCircleIcon from '@/public/assets/svgs/icons/fill/check-circle.svg';
+import CircleIcon from '@/public/assets/svgs/icons/regular/circle.svg';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import './styles.css';
 
@@ -18,7 +19,7 @@ export default function RadioInput({ name, label, setter, isChecked }: Props) {
 
 	return (
 		<div className={checked ? 'radio-input checked' : 'radio-input'} onClick={() => setChecked((prev: boolean) => !prev)}>
-			{checked ? <CheckCircle weight='fill' /> : <Circle />}
+			{checked ? <CheckCircleIcon /> : <CircleIcon />}
 			<small>{label}</small>
 		</div>
 	);
