@@ -15,10 +15,7 @@ export default async function Home() {
 
   function getTopRatedDoctors(): IDoctor[] {
     const topRatedDoctors: IDoctor[] = [];
-    doctors.filter((doctor) => {
-      if (!doctor.reviews) return;
-      getAverageRating(doctor.reviews!.map((review) => review.rate)) >= 4 && topRatedDoctors.push(doctor);
-    });
+    doctors.filter((doctor) => doctor.reviews && getAverageRating(doctor.reviews!.map((review) => review.rate)) >= 4 && topRatedDoctors.push(doctor));
     return topRatedDoctors;
   }
 
