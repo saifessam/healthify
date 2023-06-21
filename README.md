@@ -48,10 +48,6 @@
 
 - [x] Build the `DoctorPage`
 
-### **Modifications #16**
+### **Modifications #17**
 
-> 1. Added `newsletter` API route
-> 2. Removed both `ActionInput` & attribution from the footer
-> 3. Added fake social media links
-> 4. Fixed `DoctorCard` responsiveness
-> 5. Modified `DoctorProfile` layout
+> 1. Removed `newsletter` API route
