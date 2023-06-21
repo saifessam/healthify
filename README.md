@@ -48,6 +48,10 @@
 
 - [x] Build the `DoctorPage`
 
-### **Modifications #15**
+### **Modifications #16**
 
-> Updated `CarouselSection`, Removed `ShowMoreSection`, Migrated to local svg icons, Fixed some UI responsiveness issus
+> 1. Added `newsletter` API route
+> 2. Removed both `ActionInput` & attribution from the footer
+> 3. Added fake social media links
+> 4. Fixed `DoctorCard` responsiveness
+> 5. Modified `DoctorProfile` layout

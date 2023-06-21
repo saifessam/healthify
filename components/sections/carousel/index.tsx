@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Button from '@/components/button';
 import { ReactNode } from 'react';
 import './styles.css';
 
@@ -13,7 +13,7 @@ export default function CarouselSection({ title, children }: Props) {
 			<h4>{title}</h4>
 			<div className="body">
 				{children}
-				<Link href='/doctors' id="last">View more</Link>
+				<Button style={{ theme: 'secondary', shape: "normal", outlined: false }} content={"View more"} href='/doctors' />
 			</div>
 		</section>
 	);

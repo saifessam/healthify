@@ -26,16 +26,6 @@ section#carousel {
       scroll-snap-align: start;
     }
 
-    & #last {
-      aspect-ratio: 3/4;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--background-primary);
-      border-radius: var(--border-radius);
-    }
-
     &::-webkit-scrollbar {
       display: none;
     }

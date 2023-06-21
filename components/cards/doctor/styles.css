@@ -115,7 +115,7 @@
   }
 }
 
-@container doctor-card (width < 12rem) {
+@container doctor-card (width < 14.5rem) {
   & #name-verification {
     & h6 {
       max-width: 20ch !important;
@@ -132,7 +132,7 @@
   }
 }
 
-@container doctor-card (width < 8.5rem) {
+@container doctor-card (width < 10rem) {
   & #name-verification {
     & h6 {
       max-width: 15ch !important;
@@ -145,5 +145,19 @@
         display: none;
       }
     }
+  }
+}
+
+@container doctor-card (width < 9rem) {
+  & #rating {
+    display: none !important;
+  }
+
+  & #name-verification {
+    display: none !important;
+  }
+
+  & .entries {
+    display: none !important;
   }
 }

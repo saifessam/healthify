@@ -3,7 +3,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: var(--spacing);
-  padding: var(--double-spacing);
+  padding: var(--spacing);
   background-color: var(--background-secondary);
 
   & section {
@@ -40,9 +40,16 @@ footer {
   }
 }
 
-@media (width > 1024px) {
+@media (width >= 768px) {
   footer {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--double-spacing);
+  }
+}
+
+@media (width >= 1024px) {
+  footer {
     grid-template-columns: repeat(4, 1fr);
   }
 }
