@@ -39,10 +39,3 @@
   font-weight: 700;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'RedHatDisplay';
-  src: url('./../assets/fonts/RedHatDisplay/BlackItalic.ttf');
-  font-weight: 900;
-  font-style: italic;
-}

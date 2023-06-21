@@ -1,10 +1,10 @@
 "use client";
 
+import useWindowSize from '@/hooks/window-size';
 import { ArrowRight, CaretLeft, CaretRight } from '@phosphor-icons/react';
 import { ReactNode, useEffect, useMemo, useRef, useState } from 'react';
 import Button from '../../button';
 import './styles.css';
-import useWindowSize from '@/hooks/window-size';
 
 type Props = {
 	title: string;
@@ -13,37 +13,39 @@ type Props = {
 
 export default function CarouselSection({ title, children }: Props) {
 	const windowWidth = useWindowSize();
-
 	const [offset, setOffset] = useState<number>(0);
 	const [isDisabled, setIsDisabled] = useState<{ previous: boolean; next: boolean; }>({ previous: true, next: false });
-
-
 	const slides = useRef<HTMLDivElement>(null);
 	const carousel = useRef<HTMLDivElement>(null);
-	const divider = useMemo(() => windowWidth.width! >= 768 && windowWidth.width! < 1024 ? 3 : windowWidth.width! >= 1024 ? 4 : 2, [windowWidth.width]);
-	const gap = useMemo(() => divider === 2 ? 6 : 12, [divider]);
+	const divider = useMemo(() => windowWidth.width! < 768 ? 2 : windowWidth.width! >= 768 && windowWidth.width! < 1024 ? 3 : 4, [windowWidth.width]);
+	const gap = 12;
 
 	useEffect(() => {
 		const cards = slides.current?.childNodes as NodeListOf<HTMLDivElement>;
-		cards.forEach((card) => card.style.width = `${carousel.current!.offsetWidth / divider - gap}px`);
+		cards.forEach((card) => card.style.width = `${(carousel.current!.clientWidth / divider) - gap}px`);
 	}, [windowWidth.width]);
 
-	function prev() {
+	useEffect(() => {
 		if (offset === 0) return setIsDisabled((prev) => ({ ...prev, previous: true }));
-		setIsDisabled((prev) => ({ ...prev, previous: false }));
-		setOffset((prev) => prev -= carousel.current!.offsetWidth);
+		if (offset > 0) setIsDisabled((prev) => ({ ...prev, previous: false }));
+	}, [offset]);
+
+	function prev() {
+		const cards = slides.current?.childNodes as NodeListOf<HTMLDivElement>;
+		const cardWidth = cards[0].offsetWidth;
+
+		if (offset === 0) return;
+
+		setOffset((prev: number) => prev -= (cardWidth * divider) + (gap * divider));
 	}
 
 	function next() {
 		const cards = slides.current?.childNodes as NodeListOf<HTMLDivElement>;
-		if (cards.length < divider) return setIsDisabled((prev) => ({ ...prev, previous: false, next: false }));
+		const cardWidth = cards[0].offsetWidth;
 
-		const remainingWidth = slides.current!.clientWidth - (offset + carousel.current!.offsetWidth);
-		if (remainingWidth <= 0) return setIsDisabled((prev) => ({ ...prev, next: true }));
+		if (cards.length <= divider) return setIsDisabled((prev) => ({ ...prev, next: true }));
 
-		setIsDisabled((prev) => ({ ...prev, previous: false, next: false }));
-		const newOffset = offset + carousel.current!.offsetWidth;
-		setOffset(newOffset > slides.current!.clientWidth ? slides.current!.clientWidth - carousel.current!.offsetWidth : newOffset);
+		setOffset((prev: number) => prev = prev + (cardWidth * divider) + (gap * divider));
 	}
 
 	return (
@@ -53,9 +55,9 @@ export default function CarouselSection({ title, children }: Props) {
 				<Button style={{ theme: 'secondary', shape: 'normal', outlined: false, small: true }} content={<>View more <ArrowRight /></>} href='/doctors' />
 			</div>
 			<div className='carousel' ref={carousel}>
-				<Button style={{ theme: 'primary', shape: 'circular', outlined: false, disabled: isDisabled.previous }} className="arrow left" content={<CaretLeft weight='bold' />} action={prev} />
-				<div className="slides" style={{ translate: -offset }} ref={slides}>{children}</div>
-				<Button style={{ theme: 'primary', shape: 'circular', outlined: false, disabled: isDisabled.next }} className="arrow right" content={<CaretRight weight='bold' />} action={next} />
+				<Button style={{ theme: 'primary', shape: 'circular', outlined: false, small: true, disabled: isDisabled.previous }} className="arrow left" content={<CaretLeft weight='bold' />} action={prev} />
+				<div className="slides" style={{ translate: -offset, gap }} ref={slides}>{children}</div>
+				<Button style={{ theme: 'primary', shape: 'circular', outlined: false, small: true, disabled: isDisabled.next }} className="arrow right" content={<CaretRight weight='bold' />} action={next} />
 			</div>
 		</section>
 	);

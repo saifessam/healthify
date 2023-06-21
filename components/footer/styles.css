@@ -3,7 +3,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: var(--spacing);
-  padding: var(--spacing);
+  padding: var(--double-spacing);
   background-color: var(--background-secondary);
 
   & section {
@@ -38,24 +38,11 @@ footer {
       }
     }
   }
-
-  & .copyrights {
-    display: flex;
-    justify-content: space-between;
-
-    & span {
-      font: var(--sub-text);
-    }
-  }
 }
 
 @media (width > 1024px) {
   footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
-    & .copyrights {
-      grid-column: 1/5;
-    }
   }
 }

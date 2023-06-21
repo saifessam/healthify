@@ -10,8 +10,7 @@ type Props = {
 export default function Anchor({ to, label, noReferrer }: Props) {
 	return (
 		<Link href={to} referrerPolicy={noReferrer ? 'no-referrer' : undefined} target={noReferrer ? '_blank' : undefined}>
-			{label.suffix && <span>{label.suffix} &nbsp;</span>}
-			{label.text}
+			{label.suffix && <span>{label.suffix} &nbsp;</span>} {label.text}
 		</Link>
 	);
 }

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/navigation';
 import { ReactNode } from 'react';
-import Button from '../button';
+import Button from '../../button';
 import './styles.css';
 
 type Props = {
@@ -12,11 +12,11 @@ type Props = {
 	};
 };
 
-export default function Message({ icon, messages, redirect }: Props) {
+export default function MessageSection({ icon, messages, redirect }: Props) {
 	const router = useRouter();
 
 	return (
-		<section className='message'>
+		<section id='message'>
 			<article>
 				{icon}
 				<pre>{messages.join('\r\n')}</pre>

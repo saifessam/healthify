@@ -24,7 +24,7 @@ export default function Footer() {
 	return (
 		<footer>
 			<section>
-				<h6>Healthify</h6>
+				<h6>Healthify © {new Date().getFullYear()}</h6>
 				<ul>
 					<li><Anchor to='#' label={{ text: "About us" }} /></li>
 					<li><Anchor to='#' label={{ text: "Our team" }} /></li>
@@ -50,11 +50,8 @@ export default function Footer() {
 			<section id='newsletter'>
 				<h6>Newsletter</h6>
 				<ActionInput name='email' placeholder='Email address' setter={setData} action={subscribe} icon={<PaperPlaneTilt />} />
-			</section>
-			<div className='copyrights'>
-				<span>Copyrights © {new Date().getFullYear()}</span>
 				<Anchor to='https://www.linkedin.com/in/saifeldeenessam/' label={{ suffix: "Designed and developed by", text: "Saif Essam" }} noReferrer />
-			</div>
+			</section>
 		</footer>
 	);
 }

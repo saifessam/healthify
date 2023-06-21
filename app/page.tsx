@@ -37,7 +37,7 @@ export default async function Home() {
         </CarouselSection>
       }
       <CarouselSection title="Budget Friendly Doctors">
-        {doctors.map((doctor) => <DoctorCard doctor={doctor} key={`DoctorCard(${doctor.id})`} />)}
+        {getBudgetFriendlyDoctors().map((doctor) => <DoctorCard doctor={doctor} key={`DoctorCard(${doctor.id})`} />)}
       </CarouselSection>
       <TestimonialsSection testimonials={testimonials} />
       <CallToActionSection />

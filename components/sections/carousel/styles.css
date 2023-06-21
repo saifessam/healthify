@@ -40,10 +40,13 @@ section#carousel {
     }
 
     & .slides {
-      width: fit-content;
       display: flex;
+      width: fit-content;
       justify-content: flex-start;
-      gap: var(--half-spacing);
+
+      & > * {
+        flex-shrink: 0;
+      }
     }
   }
 }
