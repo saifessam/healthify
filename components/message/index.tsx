@@ -21,7 +21,7 @@ export default function Message({ icon, messages, redirect }: Props) {
 				{icon}
 				<pre>{messages.join('\r\n')}</pre>
 			</article>
-			{redirect && <Button style={{ theme: 'primary', shape: 'normal', bordered: true }} action={() => router.push(redirect.to)} content={redirect.label} />}
+			{redirect && <Button style={{ theme: 'primary', shape: 'normal', outlined: true }} action={() => router.push(redirect.to)} content={redirect.label} />}
 		</section>
 	);
 }

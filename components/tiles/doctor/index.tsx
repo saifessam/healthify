@@ -18,7 +18,7 @@ export default function DoctorTile({ doctor }: Props) {
 				<h6>{doctor.name}</h6>
 				<small>{doctor.specialization}</small>
 			</div>
-			<Button style={{ theme: 'primary', shape: 'circular', bordered: false, small: true }} content={<ArrowSquareOut />} href={`/doctors/${doctor.id}`} />
+			<Button style={{ theme: 'primary', shape: 'circular', outlined: false, small: true }} content={<ArrowSquareOut />} href={`/doctors/${doctor.id}`} />
 		</div>
 	);
 }

@@ -4,7 +4,6 @@ section#carousel {
   justify-content: flex-start;
   gap: var(--spacing);
   padding: var(--spacing);
-  overflow: hidden;
 
   & .header {
     display: flex;
@@ -23,6 +22,7 @@ section#carousel {
 
   & .carousel {
     position: relative;
+    overflow: hidden;
 
     & .arrow {
       position: absolute;
@@ -44,37 +44,6 @@ section#carousel {
       display: flex;
       justify-content: flex-start;
       gap: var(--half-spacing);
-
-      & > * {
-        width: 60dvw;
-        flex-grow: 1;
-      }
-    }
-  }
-}
-
-@media (width > 768px) {
-  section#carousel {
-    overflow: visible;
-
-    & .carousel {
-      & .slides {
-        & > * {
-          width: 40dvw !important;
-        }
-      }
-    }
-  }
-}
-
-@media (width > 1025px) {
-  section#carousel {
-    & .carousel {
-      & .slides {
-        & > * {
-          width: 20dvw !important;
-        }
-      }
     }
   }
 }

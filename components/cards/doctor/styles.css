@@ -69,7 +69,7 @@
     z-index: 2;
 
     & h6 {
-      max-width: 15ch;
+      max-width: 25ch;
       font: var(--sub-title);
       color: var(--background-primary);
       white-space: nowrap;
@@ -110,6 +110,7 @@
 @container doctor-card (width < 12rem) {
   & #name-verification {
     & h6 {
+      max-width: 20ch !important;
       font: var(--sub-label) !important;
     }
   }
@@ -124,6 +125,12 @@
 }
 
 @container doctor-card (width < 8.5rem) {
+  & #name-verification {
+    & h6 {
+      max-width: 15ch !important;
+    }
+  }
+
   & .entries {
     & li {
       &:not(:first-child) {

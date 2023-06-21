@@ -12,7 +12,7 @@ export default function HeroSection() {
 					<h4>{TextsJSON.hero["sub-title"]}</h4>
 				</div>
 				<p>{TextsJSON.hero["paragraph"]}</p>
-				<Button style={{ theme: "primary", shape: "normal", bordered: false }} content={'Explore doctors'} href='/doctors' />
+				<Button style={{ theme: "primary", shape: "normal", outlined: false }} content={'Explore doctors'} href='/doctors' />
 			</article>
 		</section>
 	);

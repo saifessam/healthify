@@ -20,7 +20,7 @@ export default async function Doctors() {
 			<>
 				<GridSection>{doctors.map((doctor) => <DoctorCard doctor={doctor} key={`DoctorsPageDoctor(${doctor.id})`} />)}</GridSection>
 				<ShowMoreSection />
-				<Button style={{ theme: "primary", shape: "circular", bordered: false }} className="floating" content={<Funnel />} />
+				<Button style={{ theme: "primary", shape: "circular", outlined: false }} className="floating" content={<Funnel />} />
 			</>
 		);
 	}

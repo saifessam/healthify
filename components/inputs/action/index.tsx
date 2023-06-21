@@ -14,7 +14,7 @@ export default function ActionInput({ name, placeholder, setter, action, icon }:
 	return (
 		<div className='action-input'>
 			<input type='text' name={name} placeholder={placeholder} autoComplete='off' onChange={(e) => setter((prev: any) => ({ ...prev, [name]: e.target.value }))} />
-			<Button style={{ theme: 'primary', shape: 'circular', bordered: false }} content={icon} action={action} />
+			<Button style={{ theme: 'primary', shape: 'circular', outlined: false }} content={icon} action={action} />
 		</div>
 	);
 }

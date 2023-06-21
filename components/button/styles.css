@@ -39,7 +39,7 @@
     }
   }
 
-  &.bordered {
+  &.outlined {
     outline: 2px solid;
     background-color: transparent !important;
   }
@@ -59,7 +59,7 @@
       fill: var(--background-secondary);
     }
 
-    &.bordered {
+    &.outlined {
       outline-color: var(--accent-primary);
       color: var(--accent-primary);
 
@@ -77,7 +77,7 @@
       fill: var(--accent-primary);
     }
 
-    &.bordered {
+    &.outlined {
       outline-color: var(--background-secondary);
       color: var(--background-secondary);
 

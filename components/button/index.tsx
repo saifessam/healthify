@@ -7,7 +7,7 @@ type Props = {
 	style: {
 		theme: "primary" | "secondary";
 		shape: "normal" | "circular";
-		bordered: boolean;
+		outlined: boolean;
 		disabled?: boolean;
 		small?: boolean;
 	};
@@ -20,7 +20,7 @@ type Props = {
 export default function Button({ type = "button", style, content, className, href, action }: Props) {
 	function getClassNames(): string[] {
 		const classNames: string[] = ["button", style.theme, style.shape];
-		if (style.bordered) classNames.push("bordered");
+		if (style.outlined) classNames.push("outlined");
 		if (style.small) classNames.push("small");
 		if (className) classNames.push(className);
 		return classNames;

@@ -19,5 +19,10 @@
 
   & button {
     border-radius: 0 !important;
+
+    & svg {
+      width: clamp(0.75rem, 1rem, 1.25rem) !important;
+      height: clamp(0.75rem, 1rem, 1.25rem) !important;
+    }
   }
 }

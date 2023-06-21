@@ -38,7 +38,7 @@ export default function Header() {
 			<Link href={"/"}>
 				<Image src={"/assets/svgs/logo.svg"} alt='Healthify' fill priority />
 			</Link>
-			<Button style={{ theme: 'primary', shape: 'circular', bordered: true }} content={searching ? <X /> : <MagnifyingGlass />} action={() => setSearching((prev) => prev = !prev)} />
+			<Button style={{ theme: 'primary', shape: 'circular', outlined: true }} content={searching ? <X /> : <MagnifyingGlass />} action={() => setSearching((prev) => prev = !prev)} />
 			<aside className={searching ? "visible" : undefined}>
 				<TextInput name='term' placeholder='Search for doctor names' setter={setData} />
 				{data.results.length > 0

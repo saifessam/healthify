@@ -15,7 +15,7 @@ export default function PasswordInput({ name, placeholder, setter }: Props) {
 	return (
 		<div className='password-input'>
 			<input type={secured ? 'password' : 'text'} name={name} placeholder={placeholder} onChange={(e) => setter((prev: any) => ({ ...prev, [name]: e.target.value }))} />
-			<Button style={{ theme: 'primary', shape: 'circular', bordered: false }} content={secured ? <Eye /> : <EyeClosed />} action={() => setSecured(current => !current)} />
+			<Button style={{ theme: 'primary', shape: 'circular', outlined: false }} content={secured ? <Eye /> : <EyeClosed />} action={() => setSecured(current => !current)} />
 		</div>
 	);
 }
