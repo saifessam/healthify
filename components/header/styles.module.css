@@ -1,0 +1,24 @@
+.header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--spacing-x2) var(--spacing-x4);
+	background-color: var(--background-primary);
+	z-index: 100;
+}
+
+.header a {
+	display: flex;
+}
+
+.header a svg {
+	min-width: 256px;
+}
+
+.header nav {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-x2);
+}

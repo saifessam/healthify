@@ -1,0 +1,378 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: var(--spacing-x1);
+	font: var(--button);
+	cursor: pointer;
+}
+
+.button:disabled {
+	cursor: default;
+}
+
+/* Special styles */
+
+.button.special.default {
+	background-color: transparent;
+}
+
+.button.special.default span {
+	background: var(--gradient-primary);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.button.special.default svg path {
+	fill: var(--gradient-primary);
+}
+
+.button.special.filled {
+	padding: var(--spacing-x2);
+	border-radius: var(--spacing-x1);
+	background: var(--gradient-primary);
+}
+
+.button.special.filled.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.special.filled span {
+	color: var(--background-primary);
+}
+
+.button.special.filled svg path {
+	fill: var(--background-primary);
+}
+
+.button.special.outlined {
+	position: relative;
+	padding: var(--spacing-x1);
+}
+
+.button.special.outlined.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.special.outlined::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: var(--spacing-x1);
+	border: 2px solid transparent;
+	background: var(--gradient-primary) border-box;
+	mask: linear-gradient(var(--background-primary) 0 0) padding-box, linear-gradient(var(--background-primary) 0 0);
+	mask-composite: exclude;
+	-webkit-mask: linear-gradient(var(--background-primary) 0 0) padding-box, linear-gradient(var(--background-primary) 0 0);
+	-webkit-mask-composite: xor;
+}
+
+.button.special.outlined span {
+	background: var(--gradient-secondary);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.button.special.outlined svg path {
+	fill: var(--gradient-primary);
+}
+
+/* Primary styles */
+
+.button.primary.default {
+	background-color: transparent;
+}
+
+.button.primary.default span {
+	color: var(--text-primary);
+}
+
+.button.primary.default svg path {
+	fill: var(--text-primary);
+}
+
+.button.primary.filled {
+	padding: var(--spacing-x2);
+	border-radius: var(--spacing-x1);
+	background: var(--text-primary);
+}
+
+.button.primary.filled.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.primary.filled span {
+	color: var(--background-primary);
+}
+
+.button.primary.filled svg path {
+	fill: var(--background-primary);
+}
+
+.button.primary.outlined {
+	padding: var(--spacing-x1);
+	border-radius: var(--spacing-x1);
+	border: 2px solid var(--text-primary);
+}
+
+.button.primary.outlined.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.primary.outlined span {
+	color: var(--text-primary);
+}
+
+.button.primary.outlined svg path {
+	fill: var(--text-primary);
+}
+
+/* Secondary styles */
+
+.button.secondary.default {
+	background-color: transparent;
+}
+
+.button.secondary.default span {
+	color: var(--text-secondary);
+}
+
+.button.secondary.default svg path {
+	fill: var(--text-secondary);
+}
+
+.button.secondary.filled {
+	padding: var(--spacing-x2);
+	border-radius: var(--spacing-x1);
+	background: var(--text-secondary);
+}
+
+.button.secondary.filled.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.secondary.filled span {
+	color: var(--background-primary);
+}
+
+.button.secondary.filled svg path {
+	fill: var(--background-primary);
+}
+
+.button.secondary.outlined {
+	padding: var(--spacing-x1);
+	border-radius: var(--spacing-x1);
+	border: 2px solid var(--text-secondary);
+}
+
+.button.secondary.outlined.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.secondary.outlined span {
+	color: var(--text-secondary);
+}
+
+.button.secondary.outlined svg path {
+	fill: var(--text-secondary);
+}
+
+/* Success styles */
+
+.button.success.default {
+	background-color: transparent;
+}
+
+.button.success.default span {
+	color: var(--green);
+}
+
+.button.success.default svg path {
+	fill: var(--green);
+}
+
+.button.success.filled {
+	padding: var(--spacing-x2);
+	border-radius: var(--spacing-x1);
+	background: var(--green);
+}
+
+.button.success.filled.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.success.filled span {
+	color: var(--background-primary);
+}
+
+.button.success.filled svg path {
+	fill: var(--background-primary);
+}
+
+.button.success.outlined {
+	padding: var(--spacing-x1);
+	border-radius: var(--spacing-x1);
+	border: 2px solid var(--green);
+}
+
+.button.success.outlined.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.success.outlined span {
+	color: var(--green);
+}
+
+.button.success.outlined svg path {
+	fill: var(--green);
+}
+
+/* Fail styles */
+
+.button.fail.default {
+	background-color: transparent;
+}
+
+.button.fail.default span {
+	color: var(--red);
+}
+
+.button.fail.default svg path {
+	fill: var(--red);
+}
+
+.button.fail.filled {
+	padding: var(--spacing-x2);
+	border-radius: var(--spacing-x1);
+	background: var(--red);
+}
+
+.button.fail.filled.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.fail.filled span {
+	color: var(--background-primary);
+}
+
+.button.fail.filled svg path {
+	fill: var(--background-primary);
+}
+
+.button.fail.outlined {
+	padding: var(--spacing-x1);
+	border-radius: var(--spacing-x1);
+	border: 2px solid var(--red);
+}
+
+.button.fail.outlined.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.fail.outlined span {
+	color: var(--red);
+}
+
+.button.fail.outlined svg path {
+	fill: var(--red);
+}
+
+/* Info styles */
+
+.button.info.default {
+	background-color: transparent;
+}
+
+.button.info.default span {
+	color: var(--orange);
+}
+
+.button.info.default svg path {
+	fill: var(--orange);
+}
+
+.button.info.filled {
+	padding: var(--spacing-x2);
+	border-radius: var(--spacing-x1);
+	background: var(--orange);
+}
+
+.button.info.filled.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.info.filled span {
+	color: var(--background-primary);
+}
+
+.button.info.filled svg path {
+	fill: var(--background-primary);
+}
+
+.button.info.outlined {
+	padding: var(--spacing-x1);
+	border-radius: var(--spacing-x1);
+	border: 2px solid var(--orange);
+}
+
+.button.info.outlined.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.info.outlined span {
+	color: var(--orange);
+}
+
+.button.info.outlined svg path {
+	fill: var(--orange);
+}
+
+/* Disabled styles */
+
+.button.disabled.default {
+	background-color: transparent;
+}
+
+.button.disabled.default span {
+	color: var(--grey);
+}
+
+.button.disabled.default svg path {
+	fill: var(--grey);
+}
+
+.button.disabled.filled {
+	padding: var(--spacing-x2);
+	border-radius: var(--spacing-x1);
+	background: var(--grey);
+}
+
+.button.disabled.filled.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.disabled.filled span {
+	color: var(--background-primary);
+}
+
+.button.disabled.filled svg path {
+	fill: var(--background-primary);
+}
+
+.button.disabled.outlined {
+	padding: var(--spacing-x1);
+	border-radius: var(--spacing-x1);
+	border: 2px solid var(--grey);
+}
+
+.button.disabled.outlined.text-button {
+	padding: var(--spacing-x2) var(--spacing-x4);
+}
+
+.button.disabled.outlined span {
+	color: var(--grey);
+}
+
+.button.disabled.outlined svg path {
+	fill: var(--grey);
+}

@@ -1,0 +1,33 @@
+:root {
+  /* Colors */
+  --background-primary: #ffffff;
+  --background-secondary: #fafafa;
+  --accent-primary: #38ef7d;
+  --accent-secondary: #11998e;
+  --gradient-primary: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--accent-secondary) 0%, var(--accent-primary) 100%);
+  --text-primary: #000000;
+  --text-secondary: #8f8f8f;
+  --red: #d21312;
+  --grey: #444444;
+  --green: #54b435;
+  --yellow: #f9d949;
+  --orange: #ff8400;
+
+  /* Units */
+  --spacing-x1: 0.5rem;
+  --spacing-x2: 1rem;
+  --spacing-x3: 1.5rem;
+  --spacing-x4: 2rem;
+  --spacing-x8: 4rem;
+
+  /* Fonts */
+  --main-heading: 700 clamp(1rem, 1.75rem, 2rem) 'PublicSans', sans-serif;
+  --sub-heading: 700 clamp(0.75rem, 1rem, 1.5rem) 'PublicSans', sans-serif;
+  --main-title: 600 clamp(1rem, 1.25rem, 1.5rem) 'PublicSans', sans-serif;
+  --sub-title: 600 clamp(0.8rem, 1rem, 1.25rem) 'PublicSans', sans-serif;
+  --main-label: 500 clamp(0.75rem, 1rem, 1.25rem) 'PublicSans', sans-serif;
+  --sub-label: 500 clamp(0.5rem, 0.75rem, 1rem) 'PublicSans', sans-serif;
+  --main-text: 400 clamp(0.75rem, 1rem, 1.25rem) 'PublicSans', sans-serif;
+  --sub-text: 400 clamp(0.5rem, 0.75rem, 1rem) 'PublicSans', sans-serif;
+}
